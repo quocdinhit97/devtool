@@ -67,15 +67,15 @@ const AppLayout: FC = () => {
 	}, [location, toolRoute])
 
 	const routeTitle = useMemo(() => {
-		if (!routeLabel) return `True Devtools - All-in-one Toolkit for Developers`
+		if (!routeLabel) return `Devtools - All-in-one Toolkit for Developers`
 
-		return `${routeLabel} | True Devtools`
+		return `${routeLabel} | Devtools`
 	}, [routeLabel])
 
 	const routeDescription = useMemo(() => {
 		if (toolRoute && toolRoute.description) return toolRoute.description
 
-		return `Stop pasting your code on random websites, True Devtools centralizes all your go-to utilities in one convenient location with 45+ carefully crafted tools.`
+		return `Stop pasting your code on random websites, Devtools centralizes all your go-to utilities in one convenient location with 45+ carefully crafted tools.`
 	}, [toolRoute])
 
 	const [searchQuery, setSearchQuery] = useState('')
@@ -126,7 +126,7 @@ const AppLayout: FC = () => {
 				<Layout.Header className={`${theme === 'light' ? 'bg-white' : ''} p-0 z-10 shadow-sm flex items-center`}>
 					<Link to='/' className='items-center gap-2 w-[310px] p-7 hidden xl:flex'>
 						<img className='w-10' src={iconImageUrl} alt={description} />
-						<Typography.Title level={2} className='text-xl mb-0'>True Devtools</Typography.Title>
+						<Typography.Title level={2} className='text-xl mb-0'>Devtools</Typography.Title>
 					</Link>
 					<Divider type='vertical' className='h-6 m-0 hidden xl:block' />
 					<div className='grow flex items-center justify-between'>
